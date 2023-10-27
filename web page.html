@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAAN MUDHALVAN</title>
+    <style>
+        body{
+    background-color: antiquewhite;
+}
+.cd{
+    color: red;
+    text-align: center;
+}
+.fd{
+    color: blue;
+    text-align: center;
+    margin-left: 20px;
+
+}
+.gh{
+    margin-left: 20px;
+}
+button{
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="cd">
+            <h1>I AM PRAKASH</h1>
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+        <div class="fd">
+            <P>This is my official portfolio website to show All
+                i am studing in ARIGNAR ANNA COLLEGE
+            </P>
+        </div>
+        <div class="gh">
+            <img src="c:\Users\Admin\Downloads\WhatsApp Image 2023-10-07 at 7.56.04 PM.jpeg" alt=""  width="400" height="300">
+        </div>
+        <br>
+        <script>document.querySelectionAll('a[href^="#"]').forEach(another => 
+        {
+           another.addEventListener('click',function(e){
+            e.preventDefault();
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=document.getElementById(targetById);
+            if(targetElement){
+                window.scrollTo({
+                    top: 
+                    targetElement.offsetTop,
+                    behavior:'smooth'
+                });
+            }
+           });
+        });
+        </script>
+
+        <div class="hf">
+        <button>DOWNLOAD CV</button>
+        </div>
+    </div>
+</body>
+</html>
